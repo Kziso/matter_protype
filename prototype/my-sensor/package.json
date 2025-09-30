@@ -1,0 +1,21 @@
+{
+    "dependencies": {
+        "@matter/main": "~0.16.0-alpha.0-20250927-238ce7756"
+    },
+    "devDependencies": {
+        "typescript": "~5.9.2",
+        "@types/node": "^24.4.0"
+    },
+    "name": "matter-app",
+    "version": "0.1.0",
+    "type": "module",
+    "scripts": {
+        "prepare": "tsc",
+        "build": "tsc",
+        "app": "node --enable-source-maps dist/SensorDeviceNode.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "clean": "node -e 'fs.rmSync(\"dist\", { recursive: true, force: true })'"
+    },
+    "description": "Temperature/Humidity sensor with a CLI command interface to get the value",
+    "author": "user.name=Kazuyuki ISO <user.email=iso.kazuyuki@ieee.org>"
+}

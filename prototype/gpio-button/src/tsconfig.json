@@ -1,0 +1,14 @@
+{
+  "extends": "../../../packages/tools/tsc/tsconfig.app.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "../dist",
+    "types": ["node"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
+  },
+  "references": [
+    { "path": "../../../packages/main/src" },
+    { "path": "../../../packages/nodejs/src" }
+  ]
+}
